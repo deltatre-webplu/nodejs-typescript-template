@@ -1,16 +1,22 @@
 // tslint:disable-next-line:no-implicit-dependencies
 import { assert, expect } from "chai";
+import { Greeter } from "../src/greeter";
 
 describe("SampleTests", function() {
 
 	it("should be possible to run unit tests", function() {
+		// ARRANGE
+		const target = new Greeter();
+
+		// ACT
 
 		// tslint:disable-next-line:no-debugger
-		debugger; // breakpoints do not work with mocha
+		debugger;
+		const message: string = target.sayHello();
 
-		assert.isTrue(3 === 3);
-		assert.isFalse(false);
-		assert.strictEqual("hello", "hello");
+		// ASSERT
+		assert.strictEqual(message, "Hello !");
+
 	});
 
 });

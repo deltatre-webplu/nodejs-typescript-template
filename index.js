@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var utils_1 = require("./src/utils");
-var message = utils_1.createGreetingsMessage("enrico");
-// console.log(message);
+var greeter_1 = require("./src/greeter");
+var greeter = new greeter_1.Greeter();
+var message = greeter.sayHello();
+// tslint:disable-next-line:no-console
+console.log(message);
 //# sourceMappingURL=index.js.map

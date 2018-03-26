@@ -19,6 +19,8 @@
       "name": "Mocha Tests",
       "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
       "args": [
+        "--require",
+        "source-map-support/register",
         "-u",
         "tdd",
         "--timeout",

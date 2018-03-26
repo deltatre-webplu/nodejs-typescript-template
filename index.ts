@@ -1,5 +1,7 @@
-import { createGreetingsMessage } from "./src/utils";
+import { Greeter } from "./src/greeter";
 
-const message = createGreetingsMessage("enrico");
+const greeter = new Greeter();
+const message: string = greeter.sayHello();
 
-// console.log(message);
+// tslint:disable-next-line:no-console
+console.log(message);
