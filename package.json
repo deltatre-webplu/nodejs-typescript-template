@@ -1,0 +1,26 @@
+{
+  "name": "typescript-project-template",
+  "version": "1.0.0",
+  "description": "Template for nodejs projects using typescript ",
+  "main": "index.js",
+  "scripts": {
+    "src-build": "tsc",
+    "src-build-w": "tsc -w",
+    "develop": "npm run src-build-w",
+    "start-dev": "set FORGE_DEVELOP=1 && set DEBUG=your-app-name && nodemon ./index.js -e js",
+    "start": "node ./index.js",
+    "test": "mocha",
+    "lint": "tslint src/**/*.ts index.ts -t verbose"
+  },
+  "author": "Enrico Massone",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "4.1.2",
+    "@types/mocha": "^5.0.0",
+    "chai": "4.1.2",
+    "mocha": "5.0.5",
+    "nodemon": "1.17.2",
+    "tslint": "5.9.1",
+    "typescript": "2.7.2"
+  }
+}
