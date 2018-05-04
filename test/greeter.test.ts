@@ -2,9 +2,9 @@
 import { assert, expect } from "chai";
 import { Greeter } from "../src/greeter";
 
-describe("SampleTests", function() {
+describe("Greeter", function() {
 
-	it("should be possible to run unit tests", function() {
+	it("Should be possible to get greeting message", function() {
 		// ARRANGE
 		const target = new Greeter();
 
@@ -12,7 +12,7 @@ describe("SampleTests", function() {
 
 		// tslint:disable-next-line:no-debugger
 		debugger;
-		const message: string = target.sayHello();
+		const message: string = target.getGreetingMessage();
 
 		// ASSERT
 		assert.strictEqual(message, "Hello !");

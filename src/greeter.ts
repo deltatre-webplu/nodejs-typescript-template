@@ -1,5 +1,7 @@
 export class Greeter {
-	sayHello() {
+
+	getGreetingMessage() {
 		return "Hello !";
 	}
+
 }
